@@ -1,0 +1,50 @@
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.trng.controller.LoginController</servlet-class>
+		  	<init-param>
+  		<param-name>userName</param-name>
+        <param-value>sourabh</param-value>
+    </init-param>
+    <init-param>
+  		<param-name>password</param-name>
+        <param-value>sourabh</param-value>
+    </init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeInformation</servlet-name>
+		<servlet-class>com.trng.controller.EmployeeInformation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/LoginController.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeInformation</servlet-name>
+		<url-pattern>/EmployeeInformation.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeInformation</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeInformation</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeInformation</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/userlogin.do</url-pattern>
+	</servlet-mapping>
+</web-app>
